@@ -1,13 +1,21 @@
+// npm packages
 import express from "express";
 import mongoose from "mongoose";
 
+// Routes
+
+// export const
 import { keys } from "./src/lib/keys.js";
+import { botText, botOn } from "./src/utils/botRoutes.js";
 
 const { port, mongo_connection } = keys;
 
 const app = express();
 
-// TODO: add mongoose to connect to mongodb atlas
+app.use(express.json());
+
+botText();
+botOn();
 
 app.get("/", (req, res) => {
   console.log("This is a get request");
