@@ -1,21 +1,25 @@
 // npm packages
 import express from "express";
 import mongoose from "mongoose";
+import TelegramBot from "node-telegram-bot-api";
 
 // Routes
-
 // export const
 import { keys } from "./src/lib/keys.js";
-import { botText, botOn } from "./src/utils/botRoutes.js";
+import { botText } from "./src/controllers/botOn.js";
+import { botPhotos } from "./src/controllers/botPhotos.js";
+import { botOn } from "./src/controllers/botMessage.js";
 
-const { port, mongo_connection } = keys;
+const { port, mongo_connection, telegram_token } = keys;
 
 const app = express();
+const bot = new TelegramBot(telegram_token, { polling: true });
 
 app.use(express.json());
 
-botText();
-botOn();
+botText(bot);
+botOn(bot);
+botPhotos(bot);
 
 app.get("/", (req, res) => {
   console.log("This is a get request");
