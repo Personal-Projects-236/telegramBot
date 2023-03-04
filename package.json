@@ -1,11 +1,12 @@
 {
-  "name": "telegramBot",
+  "name": "telegram_bot",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node": "19.2.0",
-    "npm": "8.19.3"
+    "node": "19.7.0",
+    "npm": "9.5.0",
+    "yarn": "1.22.19"
   },
   "scripts": {
     "start": "node --watch server.js"
