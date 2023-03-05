@@ -1,14 +1,8 @@
-import path from "path";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-
 import { keys } from "../lib/keys.js";
-import { downloadFile, downloadURL } from "../services/index.js";
+import { downloadURL } from "../services/index.js";
+import imageToBase64 from "image-to-base64/image-to-base64.js";
 
 const { telegram_token } = keys;
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 export const botPhotos = (bot) =>
   bot.on("photo", async (msg) => {
@@ -22,11 +16,13 @@ export const botPhotos = (bot) =>
     const res2 = await res.json();
     const filePath = res2.result.file_path;
 
-    downloadFile(
-      downloadURL(filePath),
-      path.join(__dirname, `${fileId}.jpg`),
-      () => console.log("Done!")
-    );
+    imageToBase64(`${downloadURL(filePath)}`)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     await bot.sendMessage(chatId, "Photo Received");
   });
