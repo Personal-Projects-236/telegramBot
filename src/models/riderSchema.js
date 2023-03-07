@@ -8,4 +8,5 @@ const riderSchema = new Schema({
   nextService: { type: Number, default: 0 },
 });
 
-export default model("Rider", riderSchema);
+const Rider = model("rider", riderSchema);
+export default Rider;

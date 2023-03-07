@@ -5,8 +5,9 @@ const photoSchema = new Schema({
   lastName: String,
   userName: String,
   caption: Number,
-  photo: String,
-  createdAt: String,
+  image: String,
+  createdAt: { type: Date, default: Date.now() },
 });
 
-export default model("Photo", photoSchema);
+const Photo = model("photo", photoSchema);
+export default Photo;
