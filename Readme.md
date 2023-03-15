@@ -17,6 +17,10 @@
 
 ![bot_response](./src/public/screenshots/bot_response.jpg) 
 
+<h4>If this is the first entry to the bot</h4>
+
+![first_entry](./src/public/screenshots/first_entry.jpg)
+
 <h4>If you don't attach a caption to photo Graph</h4>
 
 ![no_caption](./src/public/screenshots/no_caption.jpg)
