@@ -13,6 +13,18 @@
 
 <h2>Screenshot of the bot in action</h2>
 
-<img src="../src/public/screenshots/bot_response.png" alt="bot response"/>
+<h4>Just a simple response with a message</h4>
 
 ![bot_response](./src/public/screenshots/bot_response.jpg) 
+
+<h4>If you don't attach a caption to photo Graph</h4>
+
+![no_caption](./src/public/screenshots/no_caption.jpg)
+
+<h4>If the caption is lower than previously captioned</h4>
+
+![lower_caption](./src/public/screenshots/lower_caption.jpg)
+
+<h4>If the caption is higher than previously captioned</h4>
+
+![higher_caption](./src/public/screenshots/higher_caption.jpg)
