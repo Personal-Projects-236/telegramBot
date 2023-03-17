@@ -45,3 +45,11 @@
 
 ![if_service_due](./src/public/screenshots/if_service_is_due.png)
 <p>The service works at a range of 300 below and 300 above the next service</p>
+
+<hr>
+
+<h2>Emoji</h2>
+
+<h4>If all data is correctly received and stored it sends a smiley face emoji to Telegram</h4>
+
+![emoji](./src/public/screenshots/emoji.png)
