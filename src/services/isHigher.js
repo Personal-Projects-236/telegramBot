@@ -4,6 +4,7 @@ import Rider from "../models/riderSchema.js";
 // export const
 import { postToDB, putToDB } from "../utils/index.js";
 import { captionArray, handleServicing } from "../services/index.js";
+import { averageArray } from "./averageArray.js";
 
 const post = async (db) => await postToDB(db);
 
@@ -15,7 +16,9 @@ const higherBot = async (botObject, caption, res) => {
     chatId,
     `You have done ${
       caption - captionArray(res)[captionArray(res).length - 1]
-    } km since last reading`
+    } km since last reading, Your current average Km is: ${averageArray(
+      captionArray(res)
+    )} km`
   );
 };
 
