@@ -4,3 +4,4 @@ export * from "./isNumber.js";
 export * from "./isArrayEmpty.js";
 export * from "./captionArray.js";
 export * from "./isHigher.js";
+export * from "./handleServicing.js";

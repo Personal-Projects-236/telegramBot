@@ -20,9 +20,15 @@ export const botPhotos = (bot) =>
 
     const botObject = { bot, chatId, fileId };
 
-    // model varaibles to be stored in db
+    // model variables to be stored in db
     const photoObject = { firstName, lastName, userName, caption, image };
-    const riderObject = { firstName, lastName, userName, lastKmTaken: caption };
+    const riderObject = {
+      firstName,
+      lastName,
+      userName,
+      lastKmTaken: caption,
+      nextService: 3000,
+    };
 
     // models to be stored
     const photoModel = { model: Photo, object: photoObject };
