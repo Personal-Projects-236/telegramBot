@@ -32,3 +32,16 @@
 <h4>If the caption is higher than previously captioned</h4>
 
 ![higher_caption](./src/public/screenshots/higher_caption.jpg)
+
+<hr>
+
+<h2>Screenshot of when servicing is due</h2>
+
+<h4>If no service is Due</h4>
+
+![if_not_service](./src/public/screenshots/if_not_service.png)
+
+<h4>If a service is due it will send you a reminder</h4>
+
+![if_service_due](./src/public/screenshots/if_service_is_due.png)
+<p>The service works at a range of 300 below and 300 above the next service</p>
