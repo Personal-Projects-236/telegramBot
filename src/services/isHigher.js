@@ -4,23 +4,11 @@ import Rider from "../models/riderSchema.js";
 // export const
 import { postToDB, putToDB } from "../utils/index.js";
 import { captionArray, handleServicing } from "../services/index.js";
-import { averageArray } from "./averageArray.js";
+import { higherBot, emoji } from "../services/index.js";
 
 const post = async (db) => await postToDB(db);
 
 const put = async (update) => await putToDB(update);
-
-const higherBot = async (botObject, caption, res) => {
-  const { bot, chatId } = botObject;
-  return await bot.sendMessage(
-    chatId,
-    `You have done ${
-      caption - captionArray(res)[captionArray(res).length - 1]
-    } km since last reading, Your current average Km is: ${averageArray(
-      captionArray(res)
-    )} km`
-  );
-};
 
 export const isHigher = async (botObject, db, res, caption) => {
   const { bot, chatId } = botObject;
@@ -37,6 +25,7 @@ export const isHigher = async (botObject, db, res, caption) => {
     ? await Promise.all([
         post(db),
         put(update),
+        emoji(botObject),
         higherBot(botObject, caption, res),
       ])
     : await bot.sendMessage(
