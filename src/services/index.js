@@ -5,3 +5,5 @@ export * from "./isArrayEmpty.js";
 export * from "./captionArray.js";
 export * from "./isHigher.js";
 export * from "./handleServicing.js";
+export * from "./higherBot.js";
+export * from "./emoji.js";
