@@ -53,3 +53,18 @@
 <h4>If all data is correctly received and stored it sends a smiley face emoji to Telegram</h4>
 
 ![emoji](./src/public/screenshots/emoji.png)
+
+<hr>
+
+<h2>What will be the next step for this project?</h2>
+
+<ul>
+    <li>This project needs to be made live on Heroku</li>
+    <li>Once live setup Webhooks</li>
+    <li>Test it with taken photos of vehicle KM (this can only be done when I obtain a vehicle)</li>
+    <li>If the step above can be completed, then test to see if numbers can be grabbed from photos</li>
+</ul>
+
+<hr>
+
+<h4>NOTE: This is not based on KM taken from bike, as of when this was done I didn't have a vehicle to test it with</h4>
