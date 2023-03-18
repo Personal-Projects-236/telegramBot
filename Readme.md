@@ -17,9 +17,25 @@
     <li>Express</li>
     <li>MongoDB (for database, at time of testing this was only done locally)</li>
     <li>Github (for version control)</li>
+    <li>yarn (this is my package manager instead of npm)</li>
+    <li>Mongoose (for communicating with my db)</li>
     <li>Intellij IDE</li>
     <li>Heroku (this is still to come)</li>
     <li>Webhooks (this will come once deployed on Heroku)</li>
+</ul>
+
+<hr>
+
+<h2>Project structure that was used</h2>
+<ul>
+    <li>server.js - this is the main entry point into the project</li>
+    <li>src - this is where all directories and files will sit stands for source</li>
+    <li>controllers - this is for the main function sit here sending data to other helper functions</li>
+    <li>services - this is where all helper functions sit for the controllers</li>
+    <li>lib - this is used for all important files like a file that handles environment variables</li>
+    <li>models - all schemas sit here</li>
+    <li>public - all other content that I don't have a directory for like screenshots</li>
+    <li>utils - this is used for all files that i use often like getting data from a db</li>
 </ul>
 
 <hr>
