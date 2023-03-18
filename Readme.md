@@ -11,6 +11,35 @@
 
 <hr>
 
+<h2>Tech Stack</h2>
+<ul>
+    <li>JavaScript</li>
+    <li>Express</li>
+    <li>MongoDB (for database, at time of testing this was only done locally)</li>
+    <li>Github (for version control)</li>
+    <li>yarn (this is my package manager instead of npm)</li>
+    <li>Mongoose (for communicating with my db)</li>
+    <li>Intellij IDE</li>
+    <li>Heroku (this is still to come)</li>
+    <li>Webhooks (this will come once deployed on Heroku)</li>
+</ul>
+
+<hr>
+
+<h2>Project structure that was used</h2>
+<ul>
+    <li>server.js - this is the main entry point into the project</li>
+    <li>src - this is where all directories and files will sit stands for source</li>
+    <li>controllers - this is for the main function sit here sending data to other helper functions</li>
+    <li>services - this is where all helper functions sit for the controllers</li>
+    <li>lib - this is used for all important files like a file that handles environment variables</li>
+    <li>models - all schemas sit here</li>
+    <li>public - all other content that I don't have a directory for like screenshots</li>
+    <li>utils - this is used for all files that i use often like getting data from a db</li>
+</ul>
+
+<hr>
+
 <h2>Screenshot of the bot in action</h2>
 
 <h4>Just a simple response with a message</h4>
@@ -21,7 +50,7 @@
 
 ![first_entry](./src/public/screenshots/first_entry.jpg)
 
-<h4>If you don't attach a caption to photo Graph</h4>
+<h4>If you don't attach a caption to photo</h4>
 
 ![no_caption](./src/public/screenshots/no_caption.jpg)
 
@@ -53,3 +82,18 @@
 <h4>If all data is correctly received and stored it sends a smiley face emoji to Telegram</h4>
 
 ![emoji](./src/public/screenshots/emoji.png)
+
+<hr>
+
+<h2>What will be the next step for this project?</h2>
+
+<ul>
+    <li>This project needs to be made live on Heroku</li>
+    <li>Once live setup Webhooks</li>
+    <li>Test it with taken photos of vehicle KM (this can only be done when I obtain a vehicle)</li>
+    <li>If the step above can be completed, then test to see if numbers can be grabbed from photos</li>
+</ul>
+
+<hr>
+
+<h4>NOTE: This is not based on KM taken from bike, as of when this was done I didn't have a vehicle to test it with</h4>
