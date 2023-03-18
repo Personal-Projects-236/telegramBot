@@ -11,6 +11,19 @@
 
 <hr>
 
+<h2>Tech Stack</h2>
+<ul>
+    <li>JavaScript</li>
+    <li>Express</li>
+    <li>MongoDB (for database, at time of testing this was only done locally)</li>
+    <li>Github (for version control)</li>
+    <li>Intellij IDE</li>
+    <li>Heroku (this is still to come)</li>
+    <li>Webhooks (this will come once deployed on Heroku)</li>
+</ul>
+
+<hr>
+
 <h2>Screenshot of the bot in action</h2>
 
 <h4>Just a simple response with a message</h4>
@@ -21,7 +34,7 @@
 
 ![first_entry](./src/public/screenshots/first_entry.jpg)
 
-<h4>If you don't attach a caption to photo Graph</h4>
+<h4>If you don't attach a caption to photo</h4>
 
 ![no_caption](./src/public/screenshots/no_caption.jpg)
 
